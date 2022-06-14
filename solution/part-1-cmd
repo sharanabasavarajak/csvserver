@@ -1,0 +1,3 @@
+docker run --name test -d --env CSVSERVER_BORDER=Orange -p 9393:9300 infracloudio/csvserver:latest
+docker cp inputFile test:/csvserver/inputdata
+docker start test
